@@ -124,7 +124,7 @@ int StringToDigit(vector<char>& currentSegmentsConfiguration, const string& code
 		segment.push_back(it - currentSegmentsConfiguration.begin());
 	}
 
-	std::sort(segment.begin(), segment.end());
+	sort(segment.begin(), segment.end());
 
 	int t = digitSegments.find(segment)->second;
 
